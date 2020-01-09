@@ -3,17 +3,21 @@ This work is licensed under the Creative Commons Attribution 4.0 International L
 To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or
 send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.  
 
-# Project Status: [Active]
+
+## Project Status: [Active]
+
 
 ## Project Introduction/Objective
 The purpose of this project is to simulate student wait times for the University of California at Merced's CatTracks bus system.
 
 UC Merced, one of the newest University of California campuses in the San Joaquin Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues. Students are expressing frustration about the wait and travel times to get to campus. A recurring issue is that the bus would fill up from all of the previous stops before arriving to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
 
+
 ### Partner
 * UC Merced
 * https://www.ucmerced.edu/
 * Partner contact: Michael Colvin
+
 
 ### Methods Used
 * Data Cleaning
@@ -21,12 +25,14 @@ UC Merced, one of the newest University of California campuses in the San Joaqui
 * Data Visualization
 * Predictive Modeling
 
+
 ### Technologies
 * Bash scripting
 * Python
 * Pandas
 * jupyter notebook
 * matplotlib
+
 
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
@@ -36,11 +42,12 @@ The data is primarily located in two xlxs workbooks containing ridership informa
 Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these lines being the ones students have expressed issues with. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
 
 Some assumptions in the model:
-    * students do not get off the bus until they arrive on campus
-    * student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous bus and the current bus to arrive at the desired bus stop.
-    * model did not take into account bus delays
+    * students do not exit the bus until they arrive on campus
+    * student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous and current bus to arrive at the desired stop.
+    * model used scheduled bus stop arrival times
   
-## Project Needs/Approach
+  
+## Project Approach
 
 1. The data was imported into pandas and cleaned. Cleaning was required since the ridership spreadsheets contained:
    - inconsistent data such as variation in bus stop naming conventions between bus lines
@@ -57,11 +64,11 @@ Some assumptions in the model:
 
 ![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2018-oct-plot.png)
 
+Plot of the monthly total of students riding the bus at particular stops according to the bus lines C1-blue, C1-gold, C2-express and G-line. The Muir Pass stop is located on campus at the Student Activities and Athletics Center (SAAC). The stops listed on the x-axis going from left to right are headed toward campus. All stops listed after Muir Pass are leaving campus. 
+
 ![February 2019 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2019-feb-plot.png)
 
-![October 2018 bus line times data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2018-oct-time.png)
 
-![February 2019 bus line times data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2019-feb-time.png)
 
 
 
