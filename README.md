@@ -1,15 +1,3 @@
-# UCM_CatTracks_Simulator
-
-Python simulation of student wait times for the University of California at Merced's CatTracks bus system
-
-UC Merced, one of the newest University of California campuses, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues. Students are complaining about the wait and travel times to get to campus. A recurring issue is that the bus would fill up from all of the previous stops before arriving to campus.
-
-I am building a model to simulate student wait times at the various bus stops offered by UCM's CatTracks system using a combination of Python programming, pandas, matplotlib and bash scripting. Data is primarily located in two spreadsheets containing ridership information from February 2019 and October 2018. Data from February 2019 and October 2018 were selected since they are one of the few months during the school session not affected by holidays. 
-
-Each of these spreadsheets contain data on more than 12 bus lines on separate worksheets, but for the purposes of this project, capacity and wait times will only be simulated for three bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these bus lines being the ones students have expressed issues about.
-
-*Instructions: Click on the raw button in the upper right hand corner of this box.  Copy and paste the template into the README.md document on your github.  Fill in the titles, information and links where prompted! Feel free to stray a bit to suit your project but try to stick to the format as closely as possible for consistency across DSWG projects.*
-
 # UCM CatTracks Simulator
 This work is licensed under the Creative Commons Attribution 4.0 International License.
 To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or
@@ -17,12 +5,10 @@ send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 #### -- Project Status: [Active]
 
-## Project Intro/Objective
+## Project Introduction/Objective
 The purpose of this project is to simulate student wait times for the University of California at Merced's CatTracks bus system.
 
-UC Merced, one of the newest University of California campuses in the San Joaqui Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues. Students are expressing frustration about the wait and travel times to get to campus. This project attempts to simulate the impact of student load on these wait times.
-
-(Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+UC Merced, one of the newest University of California campuses in the San Joaqui Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues. Students are expressing frustration about the wait and travel times to get to campus. A recurring issue is that the bus would fill up from all of the previous stops before arriving to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
 
 ### Partner
 * UC Merced
@@ -45,7 +31,31 @@ UC Merced, one of the newest University of California campuses in the San Joaqui
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
 
-## Needs of this project
+The data is primarily located in two xlxs workbooks containing ridership information from February 2019 and October 2018. Data from these months were selected since they are one of the few months during the school session in which buses run regularly and are not affected by holidays or the winter or summer breaks.
+
+Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these lines being the ones students have expressed issues with. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
+
+Some assumptions in the model:
+    - students do not get off the bus until they arrive on campus
+    - student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous bus and the current bus to arrive at the desired bus stop.
+    - model did not take into account bus delays
+  
+## Project Needs/Approach
+
+1. The data was imported into pandas and cleaned. Cleaning was required since the ridership spreadsheets contained:
+   - inconsistent data such as variation in bus stop naming conventions between bus lines
+   - mispelling of bus stop names
+   - empty cells
+   - cells with Nan data
+   - random columns filled with "0"
+   - random rows filled with "0"
+   - time data of varying type
+   - multi-indexed data
+   - equivalent data between spreadsheets entered into incongruent cells
+
+2. Bar graphs were made using matplotlib to explore ridership as a function of time and bus stop.
+
+![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2018-oct-plot.png)
 
 - frontend developers
 - data exploration/descriptive statistics
