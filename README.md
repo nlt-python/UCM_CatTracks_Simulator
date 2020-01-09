@@ -4,7 +4,7 @@ To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0
 send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.  
 
 
-## Project Status: [Active]
+## Project Status: *Active*
 
 
 ## Project Introduction/Objective
@@ -62,11 +62,11 @@ Some assumptions in the model:
 
 2. Bar graphs were made using matplotlib to explore ridership as a function of time and bus stop.
 
-![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2018-oct-plot.png)
+![October 2018 bus load data]
 
 Plot of the monthly total of students riding the bus at particular stops according to the bus lines C1-blue, C1-gold, C2-express and G-line. The Muir Pass stop is located on campus at the Student Activities and Athletics Center (SAAC). The stops listed on the x-axis going from left to right are headed toward campus. All stops listed after Muir Pass are leaving campus. 
 
-![February 2019 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2019-feb-plot.png)
+![February 2019 bus load data]
 
 
 
