@@ -36,9 +36,9 @@ The data is primarily located in two xlxs workbooks containing ridership informa
 Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these lines being the ones students have expressed issues with. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
 
 Some assumptions in the model:
-    - students do not get off the bus until they arrive on campus
-    - student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous bus and the current bus to arrive at the desired bus stop.
-    - model did not take into account bus delays
+    * students do not get off the bus until they arrive on campus
+    * student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous bus and the current bus to arrive at the desired bus stop.
+    * model did not take into account bus delays
   
 ## Project Needs/Approach
 
@@ -56,6 +56,14 @@ Some assumptions in the model:
 2. Bar graphs were made using matplotlib to explore ridership as a function of time and bus stop.
 
 ![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2018-oct-plot.png)
+
+![February 2019 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2019-feb-plot.png)
+
+![October 2018 bus line times data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2018-oct-time.png)
+
+![February 2019 bus line times data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/2019-feb-time.png)
+
+
 
 - frontend developers
 - data exploration/descriptive statistics
@@ -81,21 +89,4 @@ Some assumptions in the model:
 ## Featured Notebooks/Analysis/Deliverables
 * [Notebook/Markdown/Slide Deck Title](link)
 * [Notebook/Markdown/Slide DeckTitle](link)
-* [Blog Post](link)
 
-
-## Contributing DSWG Members
-
-**Team Leads (Contacts) : [Full Name](https://github.com/[github handle])(@slackHandle)**
-
-#### Other Members:
-
-|Name     |  Slack Handle   | 
-|---------|-----------------|
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
-
-## Contact
-* If you haven't joined the SF Brigade Slack, [you can do that here](http://c4sf.me/slack).  
-* Our slack channel is `#datasci-projectname`
-* Feel free to contact team leads with any questions or if you are interested in contributing!
