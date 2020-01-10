@@ -1,6 +1,6 @@
 # UCM CatTracks Simulator 
 
-![UC Merced website](https://www.ucmerced.edu/)
+![](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/cattracks.png)
 
 
 ## Project Status: *Active*
