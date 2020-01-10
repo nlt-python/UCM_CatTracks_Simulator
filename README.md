@@ -35,8 +35,6 @@ UC Merced, one of the newest University of California campuses in the San Joaqui
 
 
 ## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
-
 The data is primarily located in two xlxs workbooks containing ridership information from February 2019 and October 2018. Data from these months were selected since they are one of the few months during the school session in which buses run regularly and are not affected by holidays or the winter or summer breaks.
 
 Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these lines being the ones students have expressed issues with. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
@@ -60,23 +58,25 @@ Some assumptions in the model:
    - multi-indexed data
    - equivalent data between spreadsheets entered into incongruent cells
    
-   ![Map of C2 Express Line (adapted from UC Merced)]https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Inked_c2_map.jpg
+![Map of C2 Express Line (adapted from UC Merced)](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Inked_c2_map.jpg)
 
 The bus stop on campus is at the Student Activities and Athletics Center (SAAC) and is the stop immediately after Arrow Wood Drive. Since the simulation is only interested in student wait times as they travel to campus, only data associated with bus stops headed toward campus is retained.
 
 2. Bar graphs were made using matplotlib to explore ridership as a function of bus stop and time.
 
-![October 2018 bus load data]https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-plot.png
+![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-plot.png)
 
-Plot of the monthly total of students riding the bus at particular stops according to the bus lines C1-blue, C1-gold, C2-express and G-line. The stops listed on the x-axis going from left to right are headed toward campus. All stops listed after Muir Pass are leaving campus and thus not included in the graph.
+Plot of the monthly total of students riding the bus at particular stops according to the bus lines C1-blue, C1-gold, C2-express and G-line. The stops listed on the x-axis going from left to right are headed toward campus. The SAAC and all stops listed after SAAC are leaving campus and thus not included in the graph.
 
-![February 2019 bus load data]https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-time.png
+A spike in student riders is observed at Arrow Wood Drive (ARRO), the last station before students arrive on campus. Spikes are also observed at stops near residential areas: Village Apartments on "R" street (RVIL) and Compass Pointe Apartments (COMP). A spike is also observed at the bus stop near Target, which is located less than half a mile from at least six different apartment complexes.
+
+![February 2019 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-time.png)
+
+
+(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
 
 
 
-
-
-- frontend developers
 - data exploration/descriptive statistics
 - data processing/cleaning
 - statistical modeling
