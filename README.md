@@ -7,7 +7,7 @@ send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 ## Project Status: *Active*
 
 
-## Project Introduction/Objective
+## Motivation
 The purpose of this project is to simulate student wait times for the University of California at Merced's CatTracks bus system.
 
 UC Merced, one of the newest University of California campuses in the San Joaquin Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues. Students are expressing frustration about the wait and travel times to get to campus. A recurring issue is that the bus would fill up from all of the previous stops before arriving to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
@@ -34,35 +34,28 @@ UC Merced, one of the newest University of California campuses in the San Joaqui
 * matplotlib
 
 
-## Project Description
+## Data & EDA
 The data is primarily located in two xlxs workbooks containing ridership information from February 2019 and October 2018. Data from these months were selected since they are one of the few months during the school session in which buses run regularly and are not affected by holidays or the winter or summer breaks.
 
 Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these lines being the ones students have expressed issues with. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
-
-Some assumptions in the model:
-- students do not exit the bus until they arrive on campus
-- student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous and current bus to arrive at the desired stop.
-- model used scheduled bus stop arrival times
   
-  
-## Project Approach/Results
 
-1. The data was imported into pandas and cleaned. Cleaning was required since the ridership spreadsheets contained:
-   - inconsistent data such as variation in bus stop naming conventions between bus lines
-   - mispelling of bus stop names
-   - cells with Nan data
-   - random columns filled with "0"
-   - random rows filled with "0"
-   - time data of varying type
-   - multi-indexed data
-   - equivalent data between spreadsheets entered into incongruent cells
-   
+The data was imported into pandas and cleaned. Cleaning was required since the ridership spreadsheets contained:
+- inconsistent data such as variation in bus stop naming conventions between bus lines
+- mispelling of bus stop names
+- cells with Nan data
+- random columns and rows filled with "0"
+- time data of varying type
+- multi-indexed data
+- equivalent data between spreadsheets entered into incongruent cells
+
+
 ![Map of C2 Express Line (adapted from UC Merced)](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Inked_c2_map.jpg)
 
 The bus stop on campus is at the Student Activities and Athletics Center (SAAC) and is the stop immediately after Arrow Wood Drive. Since the simulation is only interested in student wait times as they travel to campus, only data associated with bus stops headed toward campus is retained.
 
 
-2. Bar graphs were made using matplotlib to explore ridership as a function of bus stop and time.
+Bar graphs were made using matplotlib to explore ridership as a function of bus stop and time.
 
 ![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-plot.png)
 
@@ -77,30 +70,28 @@ Plot of the monthly total of students riding the bus according to the times in w
 Peaks in students riding the bus are observed earlier in the day which is consistent with students taking the bus to attend classes.
 
 
-3. Due to my underestimating the complexity in designing the bus load and wait times simulator, my partner contact at UC Merced suggested that I load my cleaned data into his bus simulation program.
+## Model/Simulator
+
+The cleaned data was incorporated into a simulator developed by my partner contact at UC Merced.
+
+Some assumptions in the model:
+- students do not exit the bus until they arrive on campus.
+- students are bus line agnostic and will load onto the first available bus that will take them to campus.
+- student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous and current bus to arrive at the desired stop.
+- scheduled bus stop arrival times were used and did not take into account delays.
+
+Results of the simulation were plotted using matplotlib.
 
 
-- data exploration/descriptive statistics
-- data processing/cleaning
+## Takeaways
+
 - statistical modeling
 - writeup/reporting
 - etc. (be as specific as possible)
 
-## Getting Started
 
-1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
-
-    *If using offline data mention that and how they may obtain the data from the froup)*
-    
-3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
-4. etc...
-
-*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
-
-5. Follow setup [instructions](Link to file)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [Notebook/Markdown/Slide Deck Title](link)
-* [Notebook/Markdown/Slide DeckTitle](link)
+* [Notebook/Markdown/Slide Deck Title]
+* [Notebook/Markdown/Slide DeckTitle]
 
