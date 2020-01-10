@@ -42,9 +42,9 @@ The data is primarily located in two xlxs workbooks containing ridership informa
 Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these lines being the ones students have expressed issues with. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
 
 Some assumptions in the model:
-    * students do not exit the bus until they arrive on campus
-    * student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous and current bus to arrive at the desired stop.
-    * model used scheduled bus stop arrival times
+- students do not exit the bus until they arrive on campus
+- student wait times are averaged according to the number of students getting on the bus at a particular stop divided by the difference in time it takes for the previous and current bus to arrive at the desired stop.
+- model used scheduled bus stop arrival times
   
   
 ## Project Approach
@@ -59,14 +59,18 @@ Some assumptions in the model:
    - time data of varying type
    - multi-indexed data
    - equivalent data between spreadsheets entered into incongruent cells
+   
+   ![Map of C2 Express Line (adapted from UC Merced)]https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Inked_c2_map.jpg
 
-2. Bar graphs were made using matplotlib to explore ridership as a function of time and bus stop.
+The bus stop on campus is at the Student Activities and Athletics Center (SAAC) and is the stop immediately after Arrow Wood Drive. Since the simulation is only interested in student wait times as they travel to campus, only data associated with bus stops headed toward campus is retained.
 
-![October 2018 bus load data]
+2. Bar graphs were made using matplotlib to explore ridership as a function of bus stop and time.
 
-Plot of the monthly total of students riding the bus at particular stops according to the bus lines C1-blue, C1-gold, C2-express and G-line. The Muir Pass stop is located on campus at the Student Activities and Athletics Center (SAAC). The stops listed on the x-axis going from left to right are headed toward campus. All stops listed after Muir Pass are leaving campus. 
+![October 2018 bus load data]https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-plot.png
 
-![February 2019 bus load data]
+Plot of the monthly total of students riding the bus at particular stops according to the bus lines C1-blue, C1-gold, C2-express and G-line. The stops listed on the x-axis going from left to right are headed toward campus. All stops listed after Muir Pass are leaving campus and thus not included in the graph.
+
+![February 2019 bus load data]https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-time.png
 
 
 
