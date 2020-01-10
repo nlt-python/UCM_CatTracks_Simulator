@@ -8,7 +8,7 @@
 ## Motivation
 The purpose of this project is to simulate student wait times for the University of California at Merced's CatTracks bus system.
 
-UC Merced, one of the newest University of California campuses in the San Joaquin Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues. Students are expressing frustration about the wait and travel times to get to campus. A recurring issue is that the bus would fill up from all of the previous stops before arriving to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
+UC Merced, one of the newest University of California campuses in the San Joaquin Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues as students are expressing frustration about the wait and travel times to get to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
 
 
 ### Methods Used
@@ -29,7 +29,7 @@ UC Merced, one of the newest University of California campuses in the San Joaqui
 ## Data & EDA
 The data is primarily located in two xlxs workbooks containing ridership information from February 2019 and October 2018. Data from these months were selected since they are one of the few months during the school session in which buses run regularly and are not affected by holidays or the winter or summer breaks.
 
-Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes, and these lines being the ones students have expressed issues with. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
+Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
   
 
 The data was imported into pandas and cleaned. Cleaning was required since the ridership spreadsheets contained:
