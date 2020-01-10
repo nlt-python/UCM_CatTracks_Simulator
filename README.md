@@ -45,12 +45,11 @@ Some assumptions in the model:
 - model used scheduled bus stop arrival times
   
   
-## Project Approach
+## Project Approach/Results
 
 1. The data was imported into pandas and cleaned. Cleaning was required since the ridership spreadsheets contained:
    - inconsistent data such as variation in bus stop naming conventions between bus lines
    - mispelling of bus stop names
-   - empty cells
    - cells with Nan data
    - random columns filled with "0"
    - random rows filled with "0"
@@ -62,6 +61,7 @@ Some assumptions in the model:
 
 The bus stop on campus is at the Student Activities and Athletics Center (SAAC) and is the stop immediately after Arrow Wood Drive. Since the simulation is only interested in student wait times as they travel to campus, only data associated with bus stops headed toward campus is retained.
 
+
 2. Bar graphs were made using matplotlib to explore ridership as a function of bus stop and time.
 
 ![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-plot.png)
@@ -72,9 +72,12 @@ A spike in student riders is observed at Arrow Wood Drive (ARRO), the last stati
 
 ![February 2019 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-time.png)
 
+Plot of the monthly total of students riding the bus according to the times in which each of the individual bus lines leave the main terminal (also known as Garage). This graph shows that each of the bus routes are repeated at least a dozen times throughout the day.
 
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+Peaks in students riding the bus are observed earlier in the day which is consistent with students taking the bus to attend classes.
 
+
+3. Due to my underestimating the complexity in designing the bus load and wait times simulator, my partner contact at UC Merced suggested that I load my cleaned data into his bus simulation program.
 
 
 - data exploration/descriptive statistics
