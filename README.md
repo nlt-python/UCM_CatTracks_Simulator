@@ -1,5 +1,8 @@
 # UCM CatTracks Simulator 
 
+![UC Merced website)](https://www.ucmerced.edu/)
+
+
 ## Project Status: *Active*
 
 ## Motivation
