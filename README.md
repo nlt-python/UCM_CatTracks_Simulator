@@ -1,22 +1,11 @@
-# UCM CatTracks Simulator
-This work is licensed under the Creative Commons Attribution 4.0 International License.
-To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or
-send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.  
-
+# UCM CatTracks Simulator 
 
 ## Project Status: *Active*
-
 
 ## Motivation
 The purpose of this project is to simulate student wait times for the University of California at Merced's CatTracks bus system.
 
 UC Merced, one of the newest University of California campuses in the San Joaquin Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues. Students are expressing frustration about the wait and travel times to get to campus. A recurring issue is that the bus would fill up from all of the previous stops before arriving to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
-
-
-### Partner
-* UC Merced
-* https://www.ucmerced.edu/
-* Partner contact: Michael Colvin
 
 
 ### Methods Used
@@ -94,4 +83,13 @@ Results of the simulation were plotted using matplotlib.
 ## Featured Notebooks/Analysis/Deliverables
 * [Notebook/Markdown/Slide Deck Title]
 * [Notebook/Markdown/Slide DeckTitle]
+
+
+
+### Partner
+* UC Merced
+* https://www.ucmerced.edu/
+* Partner contact: Michael Colvin
+
+* This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA. 
 
