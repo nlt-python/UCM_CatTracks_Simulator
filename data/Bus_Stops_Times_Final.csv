@@ -1,0 +1,16 @@
+First row contains the six bus route names,,,,,,,,
+First column contains the official bus stop names,,,,,,,,
+Second column contains the 4 character abbreviations for each bus stop,,,,,,,,
+Third column contains the time (minutes) between bus stops,,,,,,,,
+,,,,,,,,
+C1,C2,G,,,,,,
+Granville Apartments ,GRAN,5,"""R"" Street Village Apts.",RVIL,3,"""R"" Street Village Apts.",RVIL,3
+Walmart on Loughborough (Pullout Past Mistwood Dr.) ,WALM,2,El Redondo Dr. (Across from Jenner Dr.) ,LRED,2,El Redondo Dr. (Across from Jenner Dr.) ,LRED,2
+Meadows Ave & Olivewood Dr. (Food Maxx) ,MAXX,9,Compass Pointe Apts (Bus stop on Pacific Dr. in front) ,COMP,8,Compass Pointe Apts (Bus stop on Pacific Dr. in front) ,COMP,5
+"G St. & W. Alexander Ave. (Bus Stop On ""G"" by Gas Station) ",ALEX,2,Buena Vista Dr.,BUEN,7,Merced College The Bus terminal,TERM,2
+Rite Aid/Walgreens ,RITE,2,Merced Mall Target ,TARG,2,Ironstone Dr. ,IRON,4
+"El Portal & ""G"" Street (Bus Stop On ""G"") ",PORT,3,"Villages Apts. ""M"" Street ",MVIL,4,Bellevue Ranch on Arrow Wood Dr. ,ARRO,12
+Mercy Hospital/Tri-College ,HOSP,7,Merced College The Bus terminal,TERM,2,Student Activities & Athletics Center,SAAC,0
+Bellevue Ranch on Arrow Wood Dr. ,ARRO,12,Ironstone Dr. ,IRON,4,,,
+Student Activities & Athletics Center ,SAAC,0,Bellevue Ranch on Arrow Wood Dr. ,ARRO,12,,,
+,,,Student Activities & Athletics Center,SAAC,0,,,
