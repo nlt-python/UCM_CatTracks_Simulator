@@ -1,6 +1,6 @@
 # UCM CatTracks Simulator 
 
-![](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/cattracks.png)
+![](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/cattracks.png)
 
 
 ## Project Status: *Active*
@@ -42,20 +42,20 @@ The data was imported into pandas and cleaned. Cleaning was required since the r
 - equivalent data between spreadsheets entered into incongruent cells
 
 
-![Map of C2 Express Line (adapted from UC Merced)](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Inked_c2_map.jpg)
+![Map of C2 Express Line (adapted from UC Merced)](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/Inked_c2_map.jpg)
 
 The bus stop on campus is at the Student Activities and Athletics Center (SAAC) and is the stop immediately after Arrow Wood Drive. Since the simulation is only interested in student wait times as they travel to campus, only data associated with bus stops headed toward campus is retained.
 
 
 Bar graphs were made using matplotlib to explore ridership as a function of bus stop and time.
 
-![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-plot.png)
+![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/Oct-2018-plot.png)
 
 Plot of the monthly total of students riding the bus at particular stops according to the bus lines C1-blue, C1-gold, C2-express and G-line. The stops listed on the x-axis going from left to right are headed toward campus. The SAAC and all stops listed after SAAC are leaving campus and thus not included in the graph.
 
 A spike in student riders is observed at Arrow Wood Drive (ARRO), the last station before students arrive on campus. Spikes are also observed at stops near residential areas: Village Apartments on "R" street (RVIL) and Compass Pointe Apartments (COMP). A spike is also observed at the bus stop near Target, which is located less than half a mile from at least six different apartment complexes.
 
-![February 2019 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/Oct-2018-time.png)
+![October 2018 bus load data](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/Oct-2018-time.png)
 
 Plot of the monthly total of students riding the bus according to the times in which each of the individual bus lines leave the main terminal (also known as Garage). This graph shows that each of the bus routes are repeated at least a dozen times throughout the day.
 
@@ -74,7 +74,12 @@ Some assumptions in the model:
 
 Results of the simulation were plotted using matplotlib.
 
+![Simulation Results 1](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/student_load.png)
 
+![Simulation Results 2](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/waittimes2.png)
+
+
+![Simulation Results 2 -- scaled](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/scaled_waittimes2.png)
 ## Takeaways
 
 - statistical modeling
