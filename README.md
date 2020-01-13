@@ -8,7 +8,7 @@
 ## Motivation
 The purpose of this project is to simulate student wait times for the University of California at Merced's CatTracks bus system.
 
-UC Merced, one of the newest University of California campuses in the San Joaquin Valley, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues as students are expressing frustration about the wait and travel times to get to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
+UC Merced, one of the newest University of California campuses, began accepting undergraduate students in Fall 2005. Recently, their bus transit system, CatTracks, is experiencing a number of capacity issues as students are expressing frustration about the wait and travel times to get to campus. This project attempts to simulate the impact of scaling student load on bus stop wait times.
 
 
 ### Methods Used
@@ -29,8 +29,13 @@ UC Merced, one of the newest University of California campuses in the San Joaqui
 ## Data & EDA
 The data is primarily located in two xlxs workbooks containing ridership information from February 2019 and October 2018. Data from these months were selected since they are one of the few months during the school session in which buses run regularly and are not affected by holidays or the winter or summer breaks.
 
-Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops, weekday operation to cater to student need to take the bus to attend classes. The main goal is to gain insight on which bus stops are most affected by upscaling ridership.
+Each of these workbooks contain data on more than 12 bus lines on separate spreadsheets. As an early stage proof of concept, capacity and wait times will only be simulated for four bus lines. These lines were selected based on number of stops and weekday operation to cater to student need to take the bus to attend classes. The main goal is to gain insight on which bus stops are most affected when ridership is upscaled.
   
+
+![Map of one of 12 bus routes to UC Merced (adapted from UCM)](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/Inked_c2_map.jpg)
+
+The bus stop on campus is located at the Student Activities and Athletics Center (SAAC) shown in the upper-right corner of the image. The last stop before arriving to campus is Arrow Wood Drive. Since the simulation is only interested in student wait times as they travel to campus, only data associated with bus stops headed toward campus is used in the simulation.
+
 
 The data was imported into pandas and cleaned. Cleaning was required since the ridership spreadsheets contained:
 - inconsistent data such as variation in bus stop naming conventions between bus lines
@@ -40,11 +45,6 @@ The data was imported into pandas and cleaned. Cleaning was required since the r
 - time data of varying type
 - multi-indexed data
 - equivalent data between spreadsheets entered into incongruent cells
-
-
-![Map of C2 Express Line (adapted from UC Merced)](https://github.com/nlt-python/UCM_CatTracks_Simulator/blob/master/images/Inked_c2_map.jpg)
-
-The bus stop on campus is at the Student Activities and Athletics Center (SAAC) and is the stop immediately after Arrow Wood Drive. Since the simulation is only interested in student wait times as they travel to campus, only data associated with bus stops headed toward campus is retained.
 
 
 Bar graphs were made using matplotlib to explore ridership as a function of bus stop and time.
